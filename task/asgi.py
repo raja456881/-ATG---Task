@@ -10,7 +10,7 @@ application = get_asgi_application()
 
 
 ws_pattern = [
-        path('ws/chat/<groupname>/', ChatConsumer)
+        path('ws/chat/<groupname>/', ChatConsumer.as_asgi())
 
 ]
 

@@ -35,7 +35,7 @@ class ChatConsumer(WebsocketConsumer):
             'message': text_data,
             }
         )
-      
+
 
     def chat_message1(self, event):
         message = event['message']

@@ -3,7 +3,7 @@ from.import views
 
 urlpatterns = [
    path("login/", views.login.as_view(), name="login"),
-   path("sigup/", views.register, name="sigin"),
+   path("sigup/", views.register.as_view(), name="sigin"),
     path("logout", views.handlelogout, name="logout"),
     path("", views.home, name="home"),
     path("userdetails", views.AllUserDetail, name="userdetails"),

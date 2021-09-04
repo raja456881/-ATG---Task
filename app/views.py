@@ -145,7 +145,7 @@ class  AuthorUpdateView(View):
         user=User.objects.all().get(id=myid)
         print(user.first_name)
         User.objects.filter(username=user.username).update(username=username1, first_name=first_name,last_name=last_name, email=email)
-        return redirect('login')
+        return redirect('home')
 @login_required(login_url='/login/')
 def room(request, username):
     try :
